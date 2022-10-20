@@ -11,7 +11,7 @@ pipeline {
         }
         stage ('Install') {
             steps {
-                sh 'export PATH=/home/ubuntu/.nvm/versions/node/v16.14.0/bin:$PATH'
+                sh 'export "PATH=/home/ubuntu/.nvm/versions/node/v16.14.0/bin:$PATH" '
                 sh 'npm install'
             }
         } 
